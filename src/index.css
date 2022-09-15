@@ -1,5 +1,9 @@
 body {
   margin: 0;
+  background-image: url("./assets/img/fondo-tropical.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +14,34 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/*
+  INDEX CSS
+*/
+
+.botonInicio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  font-weight: bold;
+}
+
+.achicarCarrito{
+  width: 35px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 25px;
+  height: 40px;
+}
+p{
+  width: 45px;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-left: 45px;
+}
+.flex{
+  display: flex;
 }
