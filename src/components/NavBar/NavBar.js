@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import CartWidget from '../CartWidget/CartWidget'
 
+
 const NavBar = ({cart}) => {
   return (
     <nav className='teal darken-4'>
@@ -9,13 +10,19 @@ const NavBar = ({cart}) => {
         <NavLink to='/' className="brand-logo">Gilmore</NavLink>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
           <li>
-            <NavLink to='/Shop/'>Shop</NavLink>
+            <NavLink to='/ItemListContainer/'>Shop</NavLink>
           </li>
           <li>
-            <a href="badges.html">Nosotros</a>
+            <NavLink to='/category/:caregoryId'>Camperas</NavLink>
           </li>
           <li>
-            <a href="collapsible.html">Contacto</a>
+            <NavLink to='/category/:caregoryId'>Remeras</NavLink>
+          </li>
+          <li>
+            <NavLink to='/Nosotros/'>Nosotros</NavLink>
+          </li>
+          <li>
+            <NavLink to='/Contacto/'>Contacto</NavLink>
           </li>
           <li className='flex'>
             <CartWidget/>
@@ -23,9 +30,14 @@ const NavBar = ({cart}) => {
           </li>
         </ul>
       </div>
+
     </nav>  
+    
   )
 }
+
+
+        
 
 export default NavBar
 

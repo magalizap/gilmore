@@ -3,9 +3,12 @@ import { Link } from 'react-router-dom'
 
 export const Home = () => {
   return (
-    <div className='botonInicio'>
-      <Link to='/Shop/' class="btn-large">Shop online</Link>
-    </div>
+    <main className='bg-fondo'>
+      <div className='botonInicio'>
+        <Link to='/ItemListContainer/' className="btn-large">Shop online</Link>
+      </div>
+    </main>
+
   )
 }
 

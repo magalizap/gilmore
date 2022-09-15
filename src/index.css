@@ -1,9 +1,5 @@
 body {
   margin: 0;
-  background-image: url("./assets/img/fondo-tropical.jpg");
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -24,7 +20,7 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   font-weight: bold;
 }
@@ -42,6 +38,77 @@ p{
   margin-top: 0;
   margin-left: 45px;
 }
+h1{
+  display: flex;
+  justify-content: center;
+}
 .flex{
   display: flex;
+}
+.bg-fondo{
+  background-image: url("./assets/img/fondo-tropical.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.card{
+  background-color: darkolivegreen;
+  width: 20%;
+}
+
+.imgProductos{
+  width: 100%;
+}
+
+.imgProduct{
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 50%;
+}
+.width{
+  width: 50%;
+}
+.productoTitle{
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.alinearProductos{
+  display: flex;
+  gap: 3em;
+  margin-left: 2em;
+  margin-top: 2em;
+}
+.flex{
+  display: flex;
+}
+.alinear{
+  display: flex;
+  justify-content: center;
+}
+.boton{
+  width: 30px;
+  height: 30px;
+}
+.botonProducto{
+  margin-left: 3em;
+}
+.footerProducto{
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.product{
+  display: flex;
+  background-color:#fff;
+  width: 80%;
+}
+
+.description{
+  width: 50%;
 }
