@@ -1,29 +1,20 @@
-import React from 'react'
+
 import { useEffect, useState } from 'react'
 import { getItem } from '../../app/api'
-import ItemDetail from '../../components/ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
+import ItemDetail from '../../components/ItemDetail/ItemDetail'
+
 const ItemDetailContainer = () => {
 
-    const [producto, setProducto] = useState([])
+    const [producto, setProducto] = useState()
     const {id} = useParams()
     useEffect(() =>{
-        getItem().then(res => setProducto(res.find(item => item.id === parseInt(id))))
-    })
+        getItem().then(res => setProducto(res.find((item) => item.id == id)))
+        
+    },[])
 
-  return (
-    <>
-        <ItemDetail product={producto}/>
-    </>
-  )
+  return  producto && <ItemDetail  product={producto}/>
 }
 
 export default ItemDetailContainer
 
-/**
- *     useEffect(() =>{
-        getItem().then((data) =>{
-            setProducto(data)
-        })
-    },[])
- */

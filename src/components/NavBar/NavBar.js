@@ -1,9 +1,10 @@
-import React from 'react'
+//import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import CartWidget from '../CartWidget/CartWidget'
 
 
-const NavBar = ({cart}) => {
+const NavBar = ({category, cart}) => {
+  
   return (
     <nav className='teal darken-4'>
       <div className="nav-wrapper">
@@ -13,10 +14,10 @@ const NavBar = ({cart}) => {
             <NavLink to='/ItemListContainer/'>Shop</NavLink>
           </li>
           <li>
-            <NavLink to='/category/:caregoryId'>Camperas</NavLink>
+            <NavLink to={`/categoria/${category.categoria}` }>Camperas</NavLink>
           </li>
           <li>
-            <NavLink to='/category/:caregoryId'>Remeras</NavLink>
+            <NavLink to={`/categoria/${category.categoria}` }>Remeras</NavLink>
           </li>
           <li>
             <NavLink to='/Nosotros/'>Nosotros</NavLink>
@@ -43,4 +44,18 @@ export default NavBar
 
 /**
  * Cambiar los href por NavLinks, crear componentes para nosotros y contacto
+ * 
+ * 
+ * 
+* /// codigo de prueba, usar la lógica dentro del NavBar
+      import { useEffect, useState } from 'react'
+      import { useParams } from 'react-router-dom'
+      import { getProductos } from '../../app/api'
+
+      const [category, setCategory] = useState()
+      const {caregoryId} = useParams() 
+
+      useEffect(() =>{
+        getProductos().then(res => setCategory(res.filter((category) => category.categoria == caregoryId)))
+      }, [])
  */
