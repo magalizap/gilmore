@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import ItemCount from '../../containers/ItemCount/ItemCount'
-const ItemDetail = ({product}) => {
-
+const ItemDetail = ({product}) => { 
+  const [count, setCount] = useState(0)
   return (
 
     <div className='card'>
       <img className='imgProductos' src= {product.imagen} alt='imagen'/>
       <h1 className='productoTitle'>{product.nombre}</h1>
       <footer className='footerProducto'>{product.stockDescripcion}</footer>
-      <ItemCount stock={product.stock} initial={1} onAdd={(valor)=>alert("Añadiste "+ valor + " productos al carrito")}/>
+      {
+        count === 0 ? 
+        <ItemCount stock={product.stock} onAdd={()=>{
+          setCount()
+        }} />
+        : <Link to='/cart/'>Terminar Compra</Link>
+      }
+
     </div>
 
   )

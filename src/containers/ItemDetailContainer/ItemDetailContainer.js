@@ -11,7 +11,7 @@ const ItemDetailContainer = () => {
     useEffect(() =>{
         getItem().then(res => setProducto(res.find((item) => item.id == id)))
         
-    },[])
+    },[id])
 
   return  producto && <ItemDetail  product={producto}/>
 }

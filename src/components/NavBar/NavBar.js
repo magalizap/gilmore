@@ -42,20 +42,3 @@ const NavBar = ({cart}) => {
 
 export default NavBar
 
-/**
- * Cambiar los href por NavLinks, crear componentes para nosotros y contacto
- * 
- * 
- * 
-* /// codigo de prueba, usar la lógica dentro del NavBar
-      import { useEffect, useState } from 'react'
-      import { useParams } from 'react-router-dom'
-      import { getProductos } from '../../app/api'
-
-      const [category, setCategory] = useState()
-      const {caregoryId} = useParams() 
-
-      useEffect(() =>{
-        getProductos().then(res => setCategory(res.filter((category) => category.categoria == caregoryId)))
-      }, [])
- */

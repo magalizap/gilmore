@@ -17,7 +17,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
 
     </div>
     <div className='alinear'>
-        <button onClick={()=> onAdd(valor)}>
+        <button onClick={onAdd}>
             Añadir al carrito
         </button>
     </div>
