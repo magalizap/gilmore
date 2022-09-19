@@ -8,7 +8,7 @@ const ItemListContainer = () => {
   const {categoryId} = useParams()
   useEffect(() =>{
     if(categoryId){
-      getProductos().then(res => setProductos(res.filter((data) => data.category == categoryId)))
+      getProductos().then(res => setProductos(res.filter((data) => data.categoria == categoryId)))
     
     }else{
       getProductos().then((data) =>{
@@ -16,7 +16,7 @@ const ItemListContainer = () => {
       })
     }
 
-  },[])
+  },[categoryId])
 
 
   return (

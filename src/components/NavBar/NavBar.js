@@ -14,10 +14,10 @@ const NavBar = ({cart}) => {
             <NavLink to='/ItemListContainer/'>Shop</NavLink>
           </li>
           <li>
-            <NavLink to='/categoria/camperas' >Camperas</NavLink>
+            <NavLink to='/categoria/campera' >Camperas</NavLink>
           </li>
           <li>
-            <NavLink to='/categoria/remeras'>Remeras</NavLink>
+            <NavLink to='/categoria/remera'>Remeras</NavLink>
           </li>
           <li>
             <NavLink to='/Nosotros/'>Nosotros</NavLink>
