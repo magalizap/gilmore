@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import CartWidget from '../CartWidget/CartWidget'
 
 
-const NavBar = ({category, cart}) => {
+const NavBar = ({cart}) => {
   
   return (
     <nav className='teal darken-4'>
@@ -14,10 +14,10 @@ const NavBar = ({category, cart}) => {
             <NavLink to='/ItemListContainer/'>Shop</NavLink>
           </li>
           <li>
-            <NavLink to={`/categoria/${category.categoria}` }>Camperas</NavLink>
+            <NavLink to='/categoria/camperas' >Camperas</NavLink>
           </li>
           <li>
-            <NavLink to={`/categoria/${category.categoria}` }>Remeras</NavLink>
+            <NavLink to='/categoria/remeras'>Remeras</NavLink>
           </li>
           <li>
             <NavLink to='/Nosotros/'>Nosotros</NavLink>
