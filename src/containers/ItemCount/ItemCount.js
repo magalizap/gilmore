@@ -1,23 +1,22 @@
 import { useState } from 'react';
-const ItemCount = ({stock, initial, onAdd}) => {
+const ItemCount = ({stock, onAdd}) => {
 
-  const [valor, setValor] = useState(1);
+  const [quantity, setQuantity] = useState(1);
   return (
     <>
         <div className='alinear'>
         <button className='boton' onClick={() =>{ 
-            valor < stock ? setValor(valor + 1) : setValor(stock)
-        }}>+</button>
+          setQuantity(quantity + 1)}} disabled={quantity>=stock}>+</button>
 
-        <p>{valor}</p>
+        <p>{quantity}</p>
 
         <button className='boton' onClick={() =>{ 
-            valor > initial ? setValor(valor - 1) : setValor(initial)
-        }}>-</button>
+          setQuantity(quantity - 1)}} disabled={quantity<=1}>-</button>
 
     </div>
     <div className='alinear'>
         <button onClick={onAdd}>
+          
             Añadir al carrito
         </button>
     </div>

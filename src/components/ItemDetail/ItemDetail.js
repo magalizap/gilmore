@@ -1,8 +1,18 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { AppContext } from '../../app/CartContext'
+
 import ItemCount from '../../containers/ItemCount/ItemCount'
 const ItemDetail = ({product}) => { 
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(true)
+  const {addItem} = useContext(AppContext)
+
+  const onAdd = (quantity) =>{
+    setCount(false)
+    addItem(product, quantity)
+    console.log(`se han agregado ${quantity} al carrito`)
+  }
+
   return (
 
     <div className='card'>
@@ -10,10 +20,8 @@ const ItemDetail = ({product}) => {
       <h1 className='productoTitle'>{product.nombre}</h1>
       <footer className='footerProducto'>{product.stockDescripcion}</footer>
       {
-        count === 0 ? 
-        <ItemCount stock={product.stock} onAdd={()=>{
-          setCount()
-        }} />
+        count ? 
+        <ItemCount stock={product.stock}  onAdd={onAdd} />
         : <Link to='/cart/'>Terminar Compra</Link>
       }
 
@@ -23,4 +31,6 @@ const ItemDetail = ({product}) => {
 }
 
 export default ItemDetail
+
+
 

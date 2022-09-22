@@ -10,7 +10,7 @@ const productos = [
         imagen: campera,
         stockDescripcion: "Stock disponible: 27",
         stock: 27,
-        categoria: "campera"
+        categoria: "campera",
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ const productos = [
         imagen: remera, 
         stockDescripcion: "Stock disponible: 16",
         stock:16,
-        categoria: "remera"
+        categoria: "remera",
     },
     {
         id: 3,
@@ -26,7 +26,7 @@ const productos = [
         imagen: remera2, 
         stockDescripcion: "Stock disponible: 12",
         stock:12,
-        categoria: "remera"
+        categoria: "remera",
     },
     {
         id: 4,
@@ -34,7 +34,7 @@ const productos = [
         imagen: campera2, 
         stockDescripcion: "Stock disponible: 20",
         stock:20,
-        categoria: "campera"
+        categoria: "campera",
     }
 
 ]
@@ -58,7 +58,6 @@ export const getItem = () => new Promise((res, rej) =>{
    setTimeout(() =>{
         res(productos)
    },2000)
-   
 
 })
 
