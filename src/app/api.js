@@ -11,6 +11,7 @@ const productos = [
         stockDescripcion: "Stock disponible: 27",
         stock: 27,
         categoria: "campera",
+        precio: 6500
     },
     {
         id: 2,
@@ -19,6 +20,7 @@ const productos = [
         stockDescripcion: "Stock disponible: 16",
         stock:16,
         categoria: "remera",
+        precio: 2500
     },
     {
         id: 3,
@@ -27,6 +29,7 @@ const productos = [
         stockDescripcion: "Stock disponible: 12",
         stock:12,
         categoria: "remera",
+        precio: 2300
     },
     {
         id: 4,
@@ -35,6 +38,7 @@ const productos = [
         stockDescripcion: "Stock disponible: 20",
         stock:20,
         categoria: "campera",
+        precio:8750
     }
 
 ]

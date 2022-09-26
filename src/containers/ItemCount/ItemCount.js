@@ -6,16 +6,18 @@ const ItemCount = ({stock, onAdd}) => {
     <>
         <div className='alinear'>
         <button className='boton' onClick={() =>{ 
-          setQuantity(quantity + 1)}} disabled={quantity>=stock}>+</button>
+          setQuantity(quantity + 1)}} disabled={quantity >= stock}>+</button>
 
-        <p>{quantity}</p>
+        <p className='number'>{quantity}</p>
 
         <button className='boton' onClick={() =>{ 
-          setQuantity(quantity - 1)}} disabled={quantity<=1}>-</button>
+          setQuantity(quantity - 1)}} disabled={quantity <= 1}>-</button>
 
     </div>
     <div className='alinear'>
-        <button onClick={onAdd}>
+        <button onClick={() =>
+          onAdd(quantity)
+        }>
           
             Añadir al carrito
         </button>
