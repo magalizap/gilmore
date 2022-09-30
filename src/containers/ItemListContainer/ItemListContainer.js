@@ -10,7 +10,7 @@ const ItemListContainer = () => {
   useEffect(() =>{
     getItems().then((res) =>{
       if(categoryId){
-        const filtrado = res.filter((data) => data.categoria == categoryId)
+        const filtrado = res.filter((data) => data.categoria === categoryId)
         setProductos(filtrado)
       }else{
         setProductos(res)

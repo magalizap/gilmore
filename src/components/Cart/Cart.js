@@ -1,9 +1,11 @@
 import { useCartContext } from '../../app/CartContext'
 import { Link } from 'react-router-dom'
+import FormOrder from '../FormOrder/FormOrder'
 const Cart = () => {
   const {cart, removeItem, emptyCart} = useCartContext()
   const deleteFromCart = (id) =>{removeItem(id)}
   const deleteCart = () =>{emptyCart()}
+
   return (
     <div>
         <p>SOY EL CART</p>
@@ -22,7 +24,7 @@ const Cart = () => {
               })}
             </ul>
             <button onClick={() =>deleteCart()}>Vaciar carrito</button>
-            
+            <FormOrder/>
           </>
         ) :( <p>Cart is empty</p>) && (<Link to='/ItemListContainer/' >Seguir comprando</Link>)}
               

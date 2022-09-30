@@ -14,7 +14,7 @@ const ItemDetail = ({product}) => {
   }
 
   return (
-
+      
     <div className='card'>
       <img className='imgProductos' src= {product.imagen} alt='imagen'/>
       <h1 className='productoTitle'>{product.nombre}</h1>
@@ -24,7 +24,6 @@ const ItemDetail = ({product}) => {
       {count ? <ItemCount stock={product.stock}  onAdd={onAdd} /> :
       <Link to='/cart/'>Terminar Compra</Link>}
       
-
     </div>
 
   )

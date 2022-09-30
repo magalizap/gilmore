@@ -17,6 +17,7 @@ const CartProvider = ({children}) =>{
     setTotalPrice(totalPrice + product.precio * quantity )
     
     if(isInCart(product.id)){
+      console.log('1111111111111')
       const newCart = cart.map((item) =>{
         if(item.id === product.id){
           return {...item, quantity: item.quantity + quantity}
@@ -24,10 +25,15 @@ const CartProvider = ({children}) =>{
           return item
         }
       })
+      
       setCart(newCart)
+      
     }else{
       setCart([...cart, {...product, quantity: quantity}])
+      console.log('2222222222222')
+      
     }
+    
   }
 
   const isInCart = (id) =>{

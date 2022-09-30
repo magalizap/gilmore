@@ -70,7 +70,7 @@ import { db } from './FirebaseConfig'
 
 // CREATE
 export const createItem = async(obj) => {
-    const colRef = collection(db, 'Productos')
+    const colRef = collection(db, 'Orders')
     const data = await addDoc(colRef, obj)
     return data.id
 }
