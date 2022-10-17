@@ -1,0 +1,70 @@
+
+/* ITEM DETAIL */
+
+.link{
+    color: #114E29;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: large;
+}
+
+.link:hover{
+    color:   #83541E !important;
+}
+
+@media screen and (min-width:300px) {
+    .cardDetail{
+        display: block;
+        background-color: #D4BAA1;
+    }
+    .imgProductos{
+        width: 100%;
+    }
+    .cardInfoDetail{
+        padding: 2em;
+    }
+    .productoTitle {
+        line-height: 140%;
+    }
+    .footerProducto{
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (min-width:600px){
+    .cardDetail{
+        display: flex;
+        background-color: #D4BAA1;
+        height: 80vh;
+    }
+    .imgProductos{
+        height: 100%;
+        width: 40vw;
+    }
+}
+
+@media screen and (min-width:900px){
+
+    .imgbq{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:1200px){
+
+    .cardDetail{
+        width: 80%;
+        height: 76vh;
+    }
+    .imgProductos{
+        width: 30vw;
+    }
+}
+
+
+
+
+
+

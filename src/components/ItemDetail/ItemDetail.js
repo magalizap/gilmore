@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useCartContext } from '../../app/CartContext'
 import ItemCount from '../../containers/ItemCount/ItemCount'
+import './ItemDetail.css'
+
 
 const ItemDetail = ({product}) => { 
   const [count, setCount] = useState(true)
@@ -14,18 +16,19 @@ const ItemDetail = ({product}) => {
   }
 
   return (
-      
-    <div className='card'>
-      <img className='imgProductos' src= {product.imagen} alt='imagen'/>
-      <h1 className='productoTitle'>{product.nombre}</h1>
-      <p className='number'>${product.precio}</p>
-      <footer className='footerProducto'>{product.stockDescripcion}</footer>
-
-      {count ? <ItemCount stock={product.stock}  onAdd={onAdd} /> :
-      <Link to='/cart/'>Terminar Compra</Link>}
-      
-    </div>
-
+     <main className='imgbq'>
+      <div className='cardDetail'>
+        <img className='imgProductos' src= {product.imagen} alt='imagen'/>
+        <div className='cardInfoDetail' >
+          <h1 className='productoTitle'>{product.nombre}</h1>
+          <h2 className='number'>${product.precio}</h2>
+          <p className='cardDescription'>{product.descripcion}</p>
+          <footer className='footerProducto'> Stock disponible: {product.stock}</footer>
+          {count ? <ItemCount stock={product.stock}  onAdd={onAdd} /> : 
+          <Link className='link' to='/cart/'>Terminar compra</Link>}
+        </div>
+      </div>
+    </main> 
   )
 }
 

@@ -1,0 +1,33 @@
+.bg-dorado{
+    background-color: #83541E;
+}
+.navbar-brand{
+    font-size: 3em !important;
+
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+.navbar{
+    --bs-navbar-padding-y: none !important;
+    --bs-navbar-brand-padding-y: none !important;
+    --bs-navbar-nav-link-padding-x: 2rem !important;
+}
+
+.dropdown-menu{
+    --bs-dropdown-bg: #212529 !important;
+    --bs-dropdown-color: #fff !important;
+    --bs-dropdown-link-color: #fff !important;
+}
+
+.me-auto{
+    margin-left: auto;
+}
+
+.cart{
+    display: flex !important ;
+
+}
+
+
+
+

@@ -2,6 +2,7 @@ import ItemList from '../../components/ItemList/ItemList'
 import { useEffect, useState } from 'react'
 import { getItems } from '../../app/api'
 import { useParams } from 'react-router-dom'
+import './ItemListContainer.css'
 import imgLoading from '../../assets/img/Spinner-1s-200px(1).svg'
 const ItemListContainer = () => {
   const [productos, setProductos] = useState()
@@ -26,7 +27,7 @@ const ItemListContainer = () => {
   },[categoryId])
   return(
     loading ?
-      <div className='imgLogin'><img src={imgLoading} alt='img'/></div>
+      <div className='imgLoading'><img src={imgLoading} alt='img'/></div>
       : <ItemList  products = {productos}/>
   )
 }

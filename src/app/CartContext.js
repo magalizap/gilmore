@@ -11,7 +11,6 @@ const CartProvider = ({children}) =>{
   const [totalQty, setTotalQty] = useState(0)
   const [totalPrice, setTotalPrice] = useState(0)
 
-
   const addToCart = (product, quantity) =>{
     setTotalQty(totalQty + quantity)
     setTotalPrice(totalPrice + product.precio * quantity )

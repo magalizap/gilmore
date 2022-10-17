@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-//import backgroundImg from '../../assets/img/fondo-tropical.jpg'
+import './Home.css'
+import Button from 'react-bootstrap/Button';
 export const Home = () => {
   
   return (
     <main className='bg-fondo'>
       <div className='botonInicio'>
-        <Link to='/ItemListContainer/' className="btn-large">Ver tienda</Link>
+        <Button as={Link} to='/ItemListContainer/' variant="success">VER TIENDA</Button>
       </div>
     </main>
 

@@ -65,7 +65,7 @@ export const getItem = () => new Promise((res, rej) =>{
 
 })*/
 
-import { collection, getDocs, query, doc, getDoc, addDoc, deleteDoc, updateDoc,  where } from "firebase/firestore"
+import { collection, getDocs, query,  addDoc, doc, updateDoc } from "firebase/firestore"
 import { db } from './FirebaseConfig'
 
 // CREATE
@@ -75,11 +75,7 @@ export const createItem = async(obj) => {
     return data.id
 }
 
-// UPDATE
-export const updateItem = async (id, obj) => {
-    const colRef = collection(db,'Productos')
-    await updateDoc(doc(colRef, id), obj)
-}
+
 
 // READ
 export const getItems= async ()  => {
@@ -88,24 +84,10 @@ export const getItems= async ()  => {
     return getArrayFromCollection(result);
 }
 
-// READ WITH WHERE
-// Tener en cuenta que el tipo de dato de la condición debe coincidir con el tipo de dato que hay en Firebase o no obtendré un dato de respuesta
-export const getItemsByCondition = async (value) => {
-    const colRef = collection(db, 'Productos')
-    const result = await getDocs(query(colRef, where('age', '==', value)))
-    return getArrayFromCollection(result)
-}
-
-export const getItemById = async (id) => {
-    const colRef = collection(db,'Productos')
-    const result = await getDoc(doc(colRef, id))
-    return result.data()
-}
-
-// DELETE
-export const deleteItem = async (id) => {
-    const colRef = collection(db, 'Productos')
-    await deleteDoc(doc(colRef, id))
+// UPDATE
+export const updateItem = async (id, stock) => {
+    const colRef = collection(db, 'Productos');
+    await updateDoc(doc(colRef, id), {stock})
 }
 
 const getArrayFromCollection = (collection) => {

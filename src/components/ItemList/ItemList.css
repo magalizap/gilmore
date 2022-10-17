@@ -1,0 +1,46 @@
+
+/* ITEM LIST */
+
+.imgbq{
+    background-image: url('../../assets/img/trama-gilmore.png');
+    background-repeat: repeat;
+    padding: 2em;
+    min-height: 85vh;
+}
+
+@media screen and (min-width:300px) {
+    .alinearProductos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+        align-items: center;
+        padding: .5rem;
+
+    }
+
+}
+
+@media screen and (min-width:600px) {
+    .alinearProductos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width:900px) {
+    .alinearProductos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .alinearProductos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0;
+    }
+    .cards{
+        width: 85%;
+    }
+}

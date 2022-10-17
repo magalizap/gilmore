@@ -1,0 +1,31 @@
+/* HOME CSS*/
+
+
+.bg-fondo{
+  background-image: url('../../assets/img/fondo-girls.jpeg');
+  background-size:cover;
+  min-height: 88.75vh;
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+}
+
+.bg-verTienda{
+  background-color: #fff;
+}
+.btn-success{
+  background-color: #fff !important;
+  color: #114E29 !important;
+  font-weight: bold  !important;
+  border-width: 2px  !important;
+  font-size: 1.5em !important;
+}
+.botonInicio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+  
