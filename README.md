@@ -11,6 +11,7 @@ Utilicé media querys para adaptar el resto de los componentes.
 Para el fondo elegí una trama con las iniciales del logo.
 El slider del loading lo saqué del sitio sugerido por el profe 'https://loading.io/'
 Para lograr iconos más atractivos utilicé la librería 'https://uiverse.io/'
+Instalé Tostify 'https://www.npmjs.com/package/toastify-js' para mis alertas.
 Elegí la paleta de colores :  #83541E - #D4BAA1 - #198754   (para una mejor imagen visual)
 
 
@@ -24,7 +25,7 @@ assets -> es la que utilicé para incrustar las imagenes que no subí a Firebase
 components -> incluye componentes de presentación. Ej. el ItemList
 containers -> son los componentes contenedores. Ej. el itemListContainer
 
-A cada componente de presentación y contenedor le incorporé su propia hoja de estilos css para una mayor organización. 
+A cada componente de presentación y contenedor le incorporé su propia hoja de estilos css para que esté mejor organizado o prolijo.
 
 Toda esta información está incluída dentro de la carpeta src.
 

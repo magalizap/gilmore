@@ -11,7 +11,7 @@
     
     }
     
-    li{
+    .li{
         padding: 10px;
         background-color: #D4BAA1 ;
         margin-bottom: 10px;
@@ -89,7 +89,7 @@
         display: flex;
         justify-content: space-evenly;
     }
-    li{
+    .li{
         width: 60%;
     }
 }

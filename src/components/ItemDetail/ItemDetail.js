@@ -14,7 +14,7 @@ const ItemDetail = ({product}) => {
     setCount(false)
     addToCart(product, quantity)
     console.log(`se han agregado ${quantity} al carrito`) // agregar acá el alert
-    toast.success(`se agregaron ${quantity} al carrito`, {
+    toast.success(`se agregaron ${quantity} productos al carrito`, {
       position: "top-right",
       autoClose: 5000,
       hideProgressBar: false,

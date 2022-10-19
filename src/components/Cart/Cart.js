@@ -21,7 +21,7 @@ const Cart = () => {
                 
                 return (
            
-                  <li key={item.id}>
+                  <li className='li' key={item.id}>
 
                     <div className='alinearCart'>
                       <img className='imgCart' src={item.imagen} alt='img'></img>

@@ -1,0 +1,19 @@
+.color{
+    color: #7b8692;
+    font-size: 2em;
+    margin-right: .5em;
+    margin-left: .5em;
+}
+.footer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+    text-align: center;
+}
+
+.p{
+    color: #7b8692;
+    display: flex;
+    justify-content: center;
+}
