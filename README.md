@@ -31,6 +31,10 @@ Toda esta información está incluída dentro de la carpeta src.
 
 
 
+Adjunto gif del recorrido de mi compra.
+
+https://user-images.githubusercontent.com/104010481/196778778-9768720e-5fa9-4bf6-8bb5-3eacf965a17c.mp4
+
 
 # Getting Started with Create React App
 
