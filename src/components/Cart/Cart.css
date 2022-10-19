@@ -17,7 +17,9 @@
         margin-bottom: 10px;
         border-radius: 4px;
     }
-    
+    .negrita{
+        font-weight: bold;
+    }
     .buttoncart{
         padding: 3px;
         background-color: #fff ;
@@ -26,7 +28,7 @@
         border-color: #114E29;
         border-radius: 4px;
     }
-    
+
     .nombre{
         margin-right: 2%;
     }
@@ -73,9 +75,16 @@
         display: flex;
         justify-content: flex-start;
     }
-}
-
-@media screen and (min-width:1200px) {
+    .colum2{
+        width: 36%;
+        height: 100%;
+        background-color:#6A947A ;
+        padding: 2em;
+        border-radius: 4px;
+    }
+    .negrita{
+        font-weight:500;
+    }
     .tamañoDesktop{
         display: flex;
         justify-content: space-evenly;
@@ -83,11 +92,9 @@
     li{
         width: 60%;
     }
-    .colum2{
-        background-color:#6A947A ;
-        width: 36%;
-        height: 100%;
-        padding: 2em;
-        border-radius: 4px;
-    }
+}
+
+@media screen and (min-width:1200px) {
+
+
 }

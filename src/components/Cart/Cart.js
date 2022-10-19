@@ -46,8 +46,8 @@ const Cart = () => {
               
             </ul>
             <section className='colum2'>
-              <p>Cantidad total: {totalQty}</p>
-              <p>Precio total: ${new Intl.NumberFormat().format(totalPrice)}</p>
+              <p className='negrita'>Cantidad total: {totalQty}</p>
+              <p className='negrita'>Precio total: ${new Intl.NumberFormat().format(totalPrice)}</p>
               <div className='flex'>
                 <button className='buttoncart' onClick={() =>deleteCart()}>Vaciar carrito</button>
                 <button className='buttoncart'><Link to='/login' className='link'>Continuar</Link> </button>    
