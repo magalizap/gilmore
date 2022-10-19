@@ -6,8 +6,11 @@ const ItemList = ({products}) => {
 
   return (
     <main className='imgbq' >
-      <div className='alinearProductos'>
-        {products.map((producto, id) => <Item key={id} producto = {producto}/>)}
+      <div>
+        <p className='title'>CATÁLOGO DE PRODUCTOS</p>
+        <div className='alinearProductos'>
+          {products.map((producto, id) => <Item key={id} producto = {producto}/>)}
+        </div>
       </div>
     </main>
   )
@@ -15,4 +18,3 @@ const ItemList = ({products}) => {
 
 export default ItemList
 
-//{products.map(producto => <Item key={producto.id}  producto = {producto}/>)}

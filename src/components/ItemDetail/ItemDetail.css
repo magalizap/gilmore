@@ -8,7 +8,13 @@
     justify-content: flex-end;
     font-size: large;
 }
-
+.link2{
+    color: #114E29;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
 .link:hover{
     color:   #83541E !important;
 }
@@ -44,16 +50,12 @@
     }
 }
 
-@media screen and (min-width:900px){
 
+@media screen and (min-width:1200px){
     .imgbq{
         display: flex;
         justify-content: center;
     }
-}
-
-@media screen and (min-width:1200px){
-
     .cardDetail{
         width: 80%;
         height: 76vh;

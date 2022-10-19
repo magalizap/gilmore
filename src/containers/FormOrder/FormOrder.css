@@ -1,0 +1,54 @@
+
+@media screen and (min-width:300px) {
+    .form{
+        background-color: #D4BAA1;
+        padding: 2em;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    
+    .small{
+        font-size: small;
+        margin-bottom: 1em;
+        border-radius: 4px;
+        appearance: none;
+        -moz-appearance: textfield;
+    }
+    .backround{
+        background-color: #D4BAA1;
+        border-radius: 4px;
+        display: flex;
+        padding: 2em;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .ajustar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .form{
+        width: 85%;
+    }
+}
+@media screen and (min-width:1200px) {
+    .form{
+        width: 70%;
+        justify-content: flex-start;
+        height: 80%;
+        border-radius: 5px;
+    }
+    .ajustar{
+        margin-top: 2em;
+        width: 80%;
+    }
+    .backround{
+        height: 40%
+    }
+}

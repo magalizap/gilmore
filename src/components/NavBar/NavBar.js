@@ -1,4 +1,3 @@
-//import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import CartWidget from '../CartWidget/CartWidget'
 import { useCartContext } from '../../app/CartContext'

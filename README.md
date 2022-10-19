@@ -1,3 +1,36 @@
+
+PROYECTO REACT: "GILMORE"
+
+Mi proyecto trata sobre un e-commerce de mi ropa favorita de la tienda original 'https://www.palomaclothes.com.ar/' 
+
+Estilos:
+
+Fue un proyecto desafiante y muy divertido de realizar. 
+Incorporé las librerías de bootstrap para el NavBar y el responsive del mismo. 
+Utilicé media querys para adaptar el resto de los componentes.
+Para el fondo elegí una trama con las iniciales del logo.
+El slider del loading lo saqué del sitio sugerido por el profe 'https://loading.io/'
+Para lograr iconos más atractivos utilicé la librería 'https://uiverse.io/'
+Elegí la paleta de colores :  #83541E - #D4BAA1 - #198754   (para una mejor imagen visual)
+
+
+Estructura:
+
+La organización que elegí para mis carpetas fue un complemento entre la sugerida por el profesor y por mi tutor. 
+Separé las secciones por las carpetas: app - assets - components - containers
+
+app -> incluye información general, el contexto, enrutamiento y la base de datos de Firebase.
+assets -> es la que utilicé para incrustar las imagenes que no subí a Firebase.
+components -> incluye componentes de presentación. Ej. el ItemList
+containers -> son los componentes contenedores. Ej. el itemListContainer
+
+A cada componente de presentación y contenedor le incorporé su propia hoja de estilos css para una mayor organización. 
+
+Toda esta información está incluída dentro de la carpeta src.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
